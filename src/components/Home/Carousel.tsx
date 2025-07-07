@@ -45,14 +45,17 @@ const Carousel = ({ className, ...props }: CarouselProps) => {
                 src={item.image}
                 alt={item.title}
                 fill
-                className="w-full h-full object-cover"
+                className={cn("w-full h-full object-cover",
+                  item.position === "center" && "object-center",
+                  item.position === "bottom" && "object-bottom"
+                )}
               />
               {/* Contenido abajo con todo oscuro degradado */}
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/50 to-transparent ">
+              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/75 to-transparent">
                 <h2 className="text-4xl font-bold text-white">{item.title}</h2>
                 <p className="text-lg text-white mb-4">{item.description}</p>
                 <Link href={item.href || "#"}>
-                  <Button>Ver más</Button>
+                  <Button className="text-gray-800 cursor-pointer bg-yellow-500 hover:bg-yellow-400 transition-colors">Ver más</Button>
                 </Link>
               </div>
             </div>
