@@ -57,6 +57,8 @@ const Search = ({ items, placeholder }: SearchProps) => {
     }else{
       localStorage.setItem("lastResults", JSON.stringify([results]))
     }
+
+    setValue("")
   }
 
   const handlePreviousResults = () => {
