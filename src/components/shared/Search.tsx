@@ -69,6 +69,8 @@ const Search = ({ items, placeholder }: SearchProps) => {
     }
   }
 
+  console.log(selected)
+
   return (
     <div className="relative max-w-[300px] w-full" ref={divRef}>
       <SearchIcon className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />

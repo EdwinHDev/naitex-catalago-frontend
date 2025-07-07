@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-interface FooterProps extends React.HTMLAttributes<HTMLElement> {}
+type FooterProps = React.HTMLAttributes<HTMLElement>
 
 const Footer = ({ className, ...props }: FooterProps) => {
   return (
