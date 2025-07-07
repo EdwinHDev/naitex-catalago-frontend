@@ -154,7 +154,7 @@ export const items: Item[] = [
   {
     id: "16",
     name: "Pala truper cuadrada t-1000 puño y pcy-pe",
-    slug: "pala-truper-cuadrada-t-1000-puño-y-pcy-pe",
+    slug: "pala-truper-cuadrada-t-1000-puno-y-pcy-pe",
     description: "Pala truper cuadrada t-1000 puño y pcy-pe",
     price: "16",
     discount: 0,
